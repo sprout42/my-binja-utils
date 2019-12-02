@@ -28,7 +28,7 @@ if __name__ == '__main__':
             help='Update analysis of existing dbs')
     args = parser.parse_args()
 
-    bin_file_types = re.compile(r'^(?:Mach-O)|(?:ELF)|(?:PE32)')
+    bin_file_types = re.compile(r'^(?:Mach-O 64-bit)|(?:ELF)|(?:PE32)')
 
     strings = {}
     m = magic.Magic()
